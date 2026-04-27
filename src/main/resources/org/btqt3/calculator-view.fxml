@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.btqt3.Controller.CalculatorController"
+      style="-fx-padding:15;">
+
+    <!-- Display -->
+    <TextField fx:id="display"
+               editable="false"
+               prefHeight="50"
+               style="-fx-font-size:20; -fx-alignment: center-right;"
+               text="0"/>
+
+    <!-- Buttons -->
+    <GridPane hgap="10" vgap="10">
+
+        <!-- Row 1 -->
+        <Button text="AC" onAction="#handleButton" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Button text="/" onAction="#handleButton" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Button text="*" onAction="#handleButton" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <Button text="-" onAction="#handleButton" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+        <!-- Row 2 -->
+        <Button text="7" onAction="#handleButton" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Button text="8" onAction="#handleButton" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button text="9" onAction="#handleButton" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+        <!-- Row 3 -->
+        <Button text="4" onAction="#handleButton" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <Button text="5" onAction="#handleButton" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Button text="6" onAction="#handleButton" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+        <!-- Row 4 -->
+        <Button text="1" onAction="#handleButton" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Button text="2" onAction="#handleButton" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Button text="3" onAction="#handleButton" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+        <!-- Row 5 -->
+        <Button text="Del" onAction="#handleButton" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <Button text="0" onAction="#handleButton" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        <Button text="." onAction="#handleButton" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+        <!-- Right side -->
+        <Button text="+" onAction="#handleButton"
+                GridPane.rowIndex="1" GridPane.columnIndex="3" GridPane.rowSpan="2"/>
+
+        <Button text="=" onAction="#handleButton"
+                GridPane.rowIndex="3" GridPane.columnIndex="3" GridPane.rowSpan="2"/>
+
+    </GridPane>
+
+</VBox>

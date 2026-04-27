@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.btqt3.Controller.AuthController"
+            prefWidth="400" prefHeight="200">
+
+    <GridPane hgap="10" vgap="15"
+              AnchorPane.topAnchor="30"
+              AnchorPane.leftAnchor="30">
+
+        <!-- User -->
+        <Label text="User" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="usernameField"
+                   prefWidth="200"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <!-- Password -->
+        <Label text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField"
+                       prefWidth="200"
+                       GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    </GridPane>
+
+    <!-- Buttons -->
+    <HBox spacing="40"
+          AnchorPane.bottomAnchor="20"
+          AnchorPane.leftAnchor="80">
+
+        <Button text="login" onAction="#handleLogin"/>
+        <Button text="register" onAction="#goToRegister"/>
+
+    </HBox>
+
+</AnchorPane>
