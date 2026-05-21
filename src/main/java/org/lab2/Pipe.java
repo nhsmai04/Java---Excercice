@@ -85,7 +85,7 @@ public class Pipe {
     public void setPassed(boolean passed) { this.passed = passed; }
     public void setSpeed(double speed) {
         this.speed = speed;
-    }d
+    }
     public Rectangle getTopBounds() {
         return new Rectangle(x, 0, imageWidth, gapY);
     }
