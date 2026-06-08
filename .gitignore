@@ -3,6 +3,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+./src/main/.env
+
 ### IntelliJ IDEA ###
 .idea/
 .mvn/
